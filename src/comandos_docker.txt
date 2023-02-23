@@ -1,3 +1,4 @@
 sudo docker build -t carros-db .
 
-sudo docker run -d --name carros-db -p 3306:3306 -e MYSQL_ROOT_PASSWORD=R00t -e MYSQL_DATABASE=db_carros -e MYSQL_USER=db_creator -e MYSQL_PASSWORD=Cr34t0r carros-db
+sudo docker run -d --name carros-db -p 3306:3306 
+-e MYSQL_ROOT_PASSWORD=RootPassword -e MYSQL_DATABASE=db_carros -e MYSQL_USER=MyUser -e MYSQL_PASSWORD=MyPassword carros-db
